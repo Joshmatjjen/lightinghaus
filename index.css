@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins'
+}
+
+html,
+body {
+  min-height: 100vh;
+  /* overflow-x: hidden; */
+}
+
+body {
+  height: 100vh;
+  background-color: var(--light);
+  width: 100%;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__1 {
+  background-color: var(--dark);
+  padding-left: 2rem;
+  color: var(--light);
+
+}
