@@ -2,100 +2,93 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
   <link rel="stylesheet" href="./style/variables.css" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body class="bg">
   <header class="header">
+    <div class="header__mobile">
+      <div class="header__mobile--box">
+        <img src="./asset/navIcon.svg" alt="">
+        <img src="./asset/logoMobile1.svg" alt="">
+        <img src="./asset/cart.svg" alt="">
+      </div>
+    </div>
+    <div class="header__search-mobile">
+      <div class="header__search-mobile--box">
+        <img src="./asset/searchIco.svg" alt="" />
+        <input type="text" placeholder="Search for a product,category or space" />
+      </div>
+    </div>
     <div class="header__1">
-      <img src="./asset/Vector@1x.png" alt="">
-      <p>+234 802 501 8557</p>
-      <img src="./asset/mapPoint.png" alt="">
-      <p>35 Freedom Way, Lekki Phase 1, Lagos, Nigeria</p>
-      <img src="./asset/mailIcon.png" alt="">
-      <p>sales@thelightinghaus.com</p>
+      <div class="header-box header__1--box">
+        <img src="./asset/phone.svg" alt="" />
+        <p>+234 802 501 8557</p>
+        <img src="./asset/mapPoint.svg" alt="" />
+        <p>35 Freedom Way, Lekki Phase 1, Lagos, Nigeria</p>
+        <img src="./asset/mailIcon.svg" alt="" />
+        <p>sales@thelightinghaus.com</p>
+      </div>
     </div>
     <div class="header__2">
-      <img src="./asset/logo.png" alt="">
-      <div>
-        <img src="./asset/searchIco.png" alt="">
-        <input type="text" placeholder="Search for a product, category or space">
-      </div>
-
-      <div>
-        <div><img src="./asset/account.png" alt="">
-          <p>MY ACCOUNT</p>
+      <div class="header-box header__2--box">
+        <img class="logo1" src="./asset/logo1.svg" alt="" />
+        <div class="search-box">
+          <img src="./asset/searchIco.svg" alt="" />
+          <input type="text" placeholder="Search for a product,category or space" />
         </div>
-        <div><img src="./asset/list.png" alt="">
-          <p>List</p>
+        <div class="header__2--nav">
+          <div>
+            <img src="./asset/account.svg" alt="" />
+            <p>MY ACCOUNT</p>
+          </div>
+          <div>
+            <img src="./asset/list.svg" alt="" />
+            <p>LIST</p>
+          </div>
+          <div>
+            <img src="./asset/cart.svg" alt="" />
+            <p>CART</p>
+          </div>
         </div>
-        <div><img src="./asset/cart.png" alt="">
-          <p>MY ACCOUNT</p>
-        </div>
-        <input type="text" placeholder="Search for a product, category or space">
       </div>
     </div>
     <nav class="header__3">
       <ul>
         <li>
-          <p>
-            LIGHTING EXPLORER
-          </p>
+          <p>LIGHTING EXPLORER</p>
         </li>
         <li>
-          <p>
-            OFFICE
-          </p>
+          <p>OFFICE</p>
         </li>
         <li>
-          <p>
-            HOTEL
-          </p>
+          <p>HOTEL</p>
         </li>
         <li>
-          <p>
-            HOME
-          </p>
+          <p>HOME</p>
         </li>
         <li>
-          <p>
-            HOME
-          </p>
+          <p>ALL PRODUCT</p>
         </li>
         <li>
-          <p>
-            ALL PRODUCT
-          </p>
+          <p>PENDANT LIGHT</p>
         </li>
         <li>
-          <p>
-            PENDANT LIGHT
-          </p>
+          <p>CHANDELIER</p>
         </li>
         <li>
-          <p>
-            CHANDELIER
-          </p>
+          <p>SWITCHES & SOCKETS</p>
         </li>
         <li>
-          <p>
-            SWITCHES & SOCKETS
-          </p>
+          <p>CEILING LAMP</p>
         </li>
         <li>
-          <p>
-            CEILING LAMP
-          </p>
-        </li>
-        <li>
-          <p>
-            WALL LAMP
-          </p>
+          <p>WALL LAMP</p>
         </li>
       </ul>
     </nav>
@@ -103,17 +96,18 @@
   <section class="section">
     <!-- SECTION 1 -->
     <div class="section__1">
-      <div class="section__1">
+      <div class="section__1--box">
         <h3>Explore our Showroom</h3>
-        <p>Not sure of what you’re looking for?
-          No worries, use Lighting Xplorer to see what you can get.</p>
-
+        <p>
+          Not sure of what you’re looking for? No worries, use
+          <span>Lighting Xplorer </span> to see what you can get.
+        </p>
         <button>
           <p>Proceed to Lighting Xplorer</p>
-          <img src="./asset/arrowRight.png" alt="">
+          <img src="./asset/arrowRight.png" alt="" />
         </button>
       </div>
-      <div>
+      <div class="section__1--pagination">
         <div></div>
         <div></div>
         <div></div>
@@ -124,6 +118,7 @@
     <div class="section__2">
       <div class="title">
         <h3>Shop By Space</h3>
+        <h3 class="h3-mobile">Select Your Space</h3>
         <p>View All</p>
       </div>
       <div class="subtitle">
@@ -131,18 +126,77 @@
       </div>
       <div class="section__2--content">
         <div class="section__2--content__box">
-          <div>
-            <p>HOME</p>
+          <div class="section__2--content__box--img img-1">
+            <div>
+              <p>HOME</p>
+            </div>
           </div>
+          <p class="section__2--content__box--title">Home</p>
         </div>
         <div class="section__2--content__box">
-          <div>
-            <p>OFFICE</p>
+          <div class="section__2--content__box--img img-2">
+            <div>
+              <p>OFFICE</p>
+            </div>
           </div>
+          <p class="section__2--content__box--title">Office</p>
         </div>
         <div class="section__2--content__box">
-          <div>
-            <p>HOTEL</p>
+          <div class="section__2--content__box--img img-3">
+            <div>
+              <p>HOTEL</p>
+            </div>
+          </div>
+          <p class="section__2--content__box--title">Hotel</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="section__3-mobile">
+      <div class="title">
+        <h3>Featured Products</h3>
+        <p>View All</p>
+      </div>
+      <div class="section__3-mobile--content">
+        <div class="section__3-mobile--content__box">
+          <div class="section__3-mobile--content__box-1">
+            <div class="section__3-mobile--content__box-1__img" style="background: url('./asset/placeHolder1.png')">
+            </div>
+            <div class="section__3-mobile--content__box-1__detail">
+              <p>Standing Lamp</p>
+              <div>
+                <p>₦45,000</p>
+                <p><s>₦65,000</s></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section__3-mobile--content__box-1">
+            <div class="section__3-mobile--content__box-1__img"
+              style="background-image: url('/asset/placeHolder2.png')">
+              <div class="badge">
+                <p>10% OFF</p>
+              </div>
+            </div>
+            <div class="section__3-mobile--content__box-1__detail">
+              <p>Standing Lamp</p>
+              <div>
+                <p>₦45,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="section__3-mobile--content__box-1">
+            <div class="section__3-mobile--content__box-1__img"
+              style="background-image: url('/asset/placeHolder3.png')">
+            </div>
+            <div class="section__3-mobile--content__box-1__detail">
+              <p>Standing Lamp</p>
+              <div>
+                <p>₦45,000</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -150,88 +204,181 @@
 
     <!-- SECTION 3 -->
 
+    <!-- DESKTOP -->
     <div class="section__3">
       <div class="title">
         <h3>Popular Categories</h3>
+        <h3>Featured Categories</h3>
         <p>View All</p>
       </div>
       <div class="section__3--content">
         <div class="section__3--content__box">
-          <div>
-            <p>CEILING LAMPS</p>
+          <div class="section__3--content__box--1 content-box">
+            <div>
+              <p>CEILING LAMPS</p>
+            </div>
           </div>
-        </div>
-        <div class="section__2--content__box">
-          <div>
-            <p>CHANDELIERS</p>
+
+          <div class="section__3--content__box--2 content-box">
+            <div>
+              <p>CHANDELIERS</p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="section__3--pagination">
+        <div class="section__3--pagination__box">
+          <img src="./asset/darkLeft.svg" alt="" />
+          <img src="./asset/darkRight.svg" alt="" />
+        </div>
+      </div>
     </div>
+
+
+    <!-- MOBILE -->
+
 
     <!-- SECTION 4 -->
 
     <div class="section__4">
       <div class="title">
-        <h3>Popular Categories</h3>
+        <h3>Popular Products</h3>
         <p>View All</p>
       </div>
       <div class="section__4--content">
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder1.png') no-repeat;
+                background-size: cover;
+              "></div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder2.png') no-repeat;
+                background-size: cover;
+              ">
+            <div class="badge">
+              <p>10% OFF</p>
+            </div>
+          </div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder1.png') no-repeat;
+                background-size: cover;
+              "></div>
+          <div class="section__4--content__box--detail">
+            <p>Stand Lamp</p>
+            <h3>₦25,000</h3>
+          </div>
+        </div>
+        <div class="section__4--content__box">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder3.png') no-repeat;
+                background-size: cover;
+              "></div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder1.png') no-repeat;
+                background-size: cover;
+              "></div>
+          <div class="section__4--content__box--detail">
+            <p>Stand Lamp</p>
+            <h3>₦15,000</h3>
+          </div>
+        </div>
+        <div class="section__4--content__box">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder1.png') no-repeat;
+                background-size: cover;
+              "></div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder3.png') no-repeat;
+                background-size: cover;
+              "></div>
+          <div class="section__4--content__box--detail">
+            <p>Stand Lamp</p>
+            <h3>₦55,000</h3>
+          </div>
+        </div>
+        <div class="section__4--content__box">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder2.png') no-repeat;
+                background-size: cover;
+              ">
+            <div class="badge">
+              <p>10% OFF</p>
+            </div>
+          </div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
-        <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
-          <div class="section__4--content__box--detail">
-            <p>Stand Lamp</p>
-            <h3>₦45,000</h3>
+      </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="section__4-mobile">
+      <div class="title">
+        <h3>Popular Categories</h3>
+      </div>
+      <div class="section__4-mobile--content">
+        <div class="section__4-mobile--content__box">
+          <div class="section__4-mobile--content__box--img img-1"
+            style="background-image: url('/asset/placeHolder1.png')">
           </div>
+          <p>Living Room</p>
+          <p class="section__4-mobile--content__box--title">Home</p>
         </div>
-        <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
-          <div class="section__4--content__box--detail">
-            <p>Stand Lamp</p>
-            <h3>₦45,000</h3>
+        <div class="section__4-mobile--content__box">
+          <div class="section__4-mobile--content__box--img" style="background-image: url('/asset/placeHolder2.png')">
           </div>
+          <p>Dining Table</p>
+          <p class="section__4-mobile--content__box--title">Office</p>
         </div>
-        <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
-          <div class="section__4--content__box--detail">
-            <p>Stand Lamp</p>
-            <h3>₦45,000</h3>
+        <div class="section__4-mobile--content__box">
+          <div class="section__4-mobile--content__box--img" style="background-image: url('/asset/restaurant.png')">
           </div>
+          <p>Restaurant</p>
+          <p class="section__4-mobile--content__box--title">Hotel</p>
+        </div>
+        <div class="section__4-mobile--content__box">
+          <div class="section__4-mobile--content__box--img" style="background-image: url('/asset/cinema.png')">
+          </div>
+          <p>Home Cinema</p>
+          <p class="section__4-mobile--content__box--title">Hotel</p>
+        </div>
+        <div class="section__4-mobile--content__box">
+          <div class="section__4-mobile--content__box--img" style="background-image: url('/asset/kitchen.png')">
+          </div>
+          <p>Kitchen</p>
+          <p class="section__4-mobile--content__box--title">Hotel</p>
+        </div>
+        <div class="section__4-mobile--content__box">
+          <div class="section__4-mobile--content__box--img" style="background-image: url('/asset/boxRoom.png')">
+          </div>
+          <p>Box Room</p>
+          <p class="section__4-mobile--content__box--title">Hotel</p>
         </div>
       </div>
     </div>
@@ -240,61 +387,93 @@
 
     <div class="section__4">
       <div class="title">
-        <h3>Popular Categories</h3>
-        <p>View All</p>
+        <h3>Products on Sale</h3>
+        <!-- <p>View All</p> -->
       </div>
       <div class="section__4--content">
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder1.png') no-repeat;
+                background-size: cover;
+              "></div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder2.png') no-repeat;
+                background-size: cover;
+              ">
+            <div class="badge">
+              <p>10% OFF</p>
+            </div>
+          </div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder1.png') no-repeat;
+                background-size: cover;
+              "></div>
+          <div class="section__4--content__box--detail">
+            <p>Stand Lamp</p>
+            <h3>₦25,000</h3>
+          </div>
+        </div>
+        <div class="section__4--content__box">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder3.png') no-repeat;
+                background-size: cover;
+              "></div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder1.png') no-repeat;
+                background-size: cover;
+              "></div>
+          <div class="section__4--content__box--detail">
+            <p>Stand Lamp</p>
+            <h3>₦15,000</h3>
+          </div>
+        </div>
+        <div class="section__4--content__box">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder1.png') no-repeat;
+                background-size: cover;
+              "></div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder3.png') no-repeat;
+                background-size: cover;
+              "></div>
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
           </div>
         </div>
         <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
-          <div class="section__4--content__box--detail">
-            <p>Stand Lamp</p>
-            <h3>₦45,000</h3>
+          <div class="section__4--content__box--img" style="
+                background: url('./asset/placeHolder2.png') no-repeat;
+                background-size: cover;
+              ">
+            <div class="badge">
+              <p>10% OFF</p>
+            </div>
           </div>
-        </div>
-        <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
-          <div class="section__4--content__box--detail">
-            <p>Stand Lamp</p>
-            <h3>₦45,000</h3>
-          </div>
-        </div>
-        <div class="section__4--content__box">
-          <img src="./asset/placeHolder1.png" alt="">
           <div class="section__4--content__box--detail">
             <p>Stand Lamp</p>
             <h3>₦45,000</h3>
@@ -302,7 +481,97 @@
         </div>
       </div>
     </div>
+    <div class="section__btn-mobile">
+      <p>View All Products</p>
+    </div>
+    <div class="section__5">
+      <div class="section__5--left">
+        <div class="section__5--left__top">
+          <img src="./asset/mailIcon1.png" alt="" />
+          <h3>Join our mailing list</h3>
+        </div>
+        <div class="section__5--left__info">
+          <p>
+            Subscribe to our newsletter to get updates on our latest offers!
+          </p>
+        </div>
+        <div class="section__5--left__input">
+          <input type="text" placeholder="Enter email address here" name="" id="" />
+        </div>
+        <button>
+          <p>Subscribe</p>
+        </button>
+      </div>
+      <div class="section__5--right">
+        <img src="./asset/placeholderMail.png" alt="" />
+      </div>
+    </div>
   </section>
+  <footer class="footer">
+    <div class="footer__1">
+      <div class="footer__1--box">
+        <div class="footer__1--box-1">
+          <img src="./asset/logo2.svg" alt="" />
+          <p>
+            //Talk about the company here// Brighten your nights with modern
+            designer lighting from Thelightinghaus.com Our range features top
+            brands and all the latest contemporary lighting styles to
+            illuminate your home and garden.
+          </p>
+        </div>
+        <div class="footer__1--box-2">
+          <h3>Quick Links</h3>
+          <ul>
+            <li class="active">LIGHTING EXPLORER</li>
+            <li>OFFICE</li>
+            <li>HOTEL</li>
+            <li>HOME</li>
+            <li>MY ACCOUNT</li>
+            <li>CART</li>
+          </ul>
+        </div>
+        <div class="footer__1--box-3">
+          <h3>Connect</h3>
+          <div class="footer__1--box-3__content">
+            <p>Connect with us on social media</p>
+            <div class="social">
+              <img src="./asset/telegram.svg" alt="" />
+              <img src="./asset/whatsapp.svg" alt="" />
+              <img src="./asset/linkd.svg" alt="" />
+              <img src="./asset/youtube.png" alt="" />
+              <img src="./asset/twitter.svg" alt="" />
+              <img src="./asset/facebook.svg" alt="" />
+              <img src="./asset/instagram.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__1--box-4">
+          <div class="footer__1--box-4__top">
+            <img src="./asset/logo3.png" alt="" />
+            <div>
+              <h3>Download our mobile app</h3>
+              <p>Get access to exclusive offers</p>
+            </div>
+          </div>
+          <div class="footer__1--box-4__bottom">
+            <img src="./asset/appstore.png" alt="" />
+            <img src="./asset/gogleplay.png" alt="" />
+          </div>
+          <div class="footer__1--box-4__bottom"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__2">
+      <div class="footer__2--box">
+        <img src="./asset/phone.svg" alt="" />
+        <p>+234 802 501 8557</p>
+        <img src="./asset/mapPoint.svg" alt="" />
+        <p>35 Freedom Way, Lekki Phase 1, Lagos, Nigeria</p>
+        <img src="./asset/mailIcon.svg" alt="" />
+        <p>sales@thelightinghaus.com</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

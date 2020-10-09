@@ -1,4 +1,11 @@
 :root {
   --dark: #000000;
   --light: #FFFFFF;
+  --border: #828282;
+  --border2: #8282822a;
+  --text1: #4F4F4F;
+  --uniq1: #F4811F;
+  --uniq2: #FFCA05;
+  --mail-bg: #F2F2F2;
+  --footer-bg: #333333;
 }
