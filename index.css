@@ -705,9 +705,11 @@ input {
   align-items: center;
 }
 
-/* .footer__2--box>* {
-
-} */
+.footer__2--box>* {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .footer__2--box img {
   height: 1.1rem;
@@ -819,6 +821,10 @@ input {
     font-size: 1.5rem;
   }
 
+  .section__2--content__box {
+    width: 32%;
+  }
+
   .section__2--content__box--img div {
     display: none;
   }
@@ -832,10 +838,6 @@ input {
 
   .title {
     justify-content: space-between;
-  }
-
-  .footer {
-    display: none;
   }
 
   .section__4 {
@@ -934,11 +936,6 @@ input {
     display: none;
   }
 
-  .section__3 {
-    width: 90%;
-    margin: 5rem auto 2rem auto;
-  }
-
   .section__3--content__box {
     gap: 2rem;
   }
@@ -1005,8 +1002,8 @@ input {
   }
 
   .section__4-mobile--content__box p {
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 
   .section__4-mobile--content__box--img {
@@ -1048,9 +1045,26 @@ input {
     border-radius: 0.5rem;
   }
 
-
   .section__5 {
     width: 90%;
+  }
+
+  /* .footer {
+    display: none;
+  } */
+
+  .footer__1--box {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .footer__2--box {
+    width: 90%;
+    padding: 0 2rem;
+  }
+
+  .footer__2--box {
+    flex-wrap: wrap;
   }
 }
 
@@ -1059,10 +1073,81 @@ input {
 
 @media only screen and (max-width: 37.5em) {
 
+  .header__mobile--box {
+    width: 95%;
+  }
+
+  .header__search-mobile--box {
+    width: 95%;
+  }
+
+  .section__1 {
+    background: none;
+    height: auto;
+    padding: 0;
+  }
+
+  .section__1--box {
+    margin-top: 1rem;
+    width: 95%;
+
+    padding: 0;
+    padding-right: 3rem;
+    margin: 2rem auto;
+  }
+
+  .section__1--box button {
+    width: 80%;
+  }
+
+  .section__1--box button p {
+    margin: 1.5rem 0;
+  }
+
+  .section__1--pagination {
+    display: none;
+  }
+
+  .section__2 {
+    width: 95%;
+  }
+
+  .section__2--content__box--img {
+    height: 15rem;
+  }
+
+  .section__3-mobile {
+    width: 95%;
+  }
+
+  .section__3-mobile--content__box-1__img {
+    height: 18rem;
+  }
+
+  .section__3 {
+    width: 95%;
+  }
+
+  .section__4-mobile {
+    width: 95%;
+  }
+
+  .section__4-mobile--content__box {
+    flex: 1 0 30%;
+  }
+
+  .section__4-mobile--content__box--img {
+    display: flex;
+    height: 12rem;
+  }
+
+  .section__btn-mobile {
+    width: 95%;
+  }
 
   .section__5 {
+    width: 95%;
     justify-content: center;
-    /* align-items: center; */
   }
 
   .section__5--left {
@@ -1091,4 +1176,7 @@ input {
     display: none;
   }
 
+  .footer__1--box {
+    width: 95%;
+  }
 }
